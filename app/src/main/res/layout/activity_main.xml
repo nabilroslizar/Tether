@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nabil.myapplication.MainActivity"
+    android:background="@drawable/theme">
+
+    <Button android:id="@+id/dummy_button"
+    style="metaButtonBarButtonStyle"
+    android:layout_width="198dp"
+    android:layout_height="69dp"
+    android:layout_weight="1"
+    android:text="Add Device"
+    android:fontFamily="trebuchet ms"
+    android:clickable="true"
+    android:onClick="buttonOnClick"
+    android:background="#93a5db"
+    android:layout_gravity="center_horizontal|bottom"
+        android:layout_above="@+id/dummy_button"
+        android:layout_alignLeft="@+id/dummy_button"
+        android:layout_alignStart="@+id/dummy_button" />
+
+    <Button android:id="@+id/dummy_button"
+        style="metaButtonBarButtonStyle"
+        android:layout_width="198dp"
+        android:layout_height="69dp"
+        android:layout_weight="1"
+        android:text="My Devices"
+        android:fontFamily="trebuchet ms"
+        android:clickable="true"
+        android:onClick="buttonOnClick2"
+        android:background="#93a5db"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="32dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
